@@ -17,12 +17,12 @@ function App() {
           letterSpacing: 2,
         }}
       >
-        Hello, World!
+        Bills Manager
       </Typography>
 
       <Box>
         <Typography variant="h3" gutterBottom>
-          This is a simple application for helping with the bills.
+          This is a simple application for helping with the bills
         </Typography>
       </Box>
 
