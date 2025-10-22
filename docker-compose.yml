@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgres:14
+
+    restart: always
+
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: admin
+      POSTGRES_DB: teste
+
+    ports:
+      - "5433:5432"
+  # db2:
+  #   image: postgres:14
+
+  #   restart: always
+
+  #   environment:
+  #     POSTGRES_PASSWORD: admin
+  #     POSTGRES_USER: admin
+
+  #   ports:
+  #     - "5434:5432"
+
+  #   volumes:
+  #     - postgres_data2:/var/lib/postgresql/data
+
+  # pc1:
+  #   image: alpine:latest
+
+  #   container_name: PC01
+
+  #   stdin_open: true
+  #   tty: true
+
+  #   volumes:
+  #     - meus_arquivos:/data
+
+volumes:
+  postgres_data:
+  postgres_data2:
